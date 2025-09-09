@@ -45,8 +45,13 @@ jobs:
   - <<: *copr_fedora
     trigger: commit
     branch: main
+<<<<<<< HEAD
     #owner: "@fedora-iot"
     #project: fedora-iot
+=======
+    owner: "@fedora-iot"
+    project: fedora-iot
+>>>>>>> 15e1d3e (Add minimal Packit integration with spec, vendor config, and Makefile helpers)
 
   - job: sync_from_downstream
     trigger: commit
@@ -69,6 +74,11 @@ jobs:
   - <<: *copr_centos
     trigger: commit
     branch: main
+<<<<<<< HEAD
     #owner: "@fedora-iot"
     #project: fedora-iot
+=======
+    owner: "@fedora-iot"
+    project: fedora-iot
+>>>>>>> 15e1d3e (Add minimal Packit integration with spec, vendor config, and Makefile helpers)
 
