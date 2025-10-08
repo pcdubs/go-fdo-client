@@ -1,0 +1,9 @@
+summary: E2E test for go-fdo-client onboarding workflow
+description: |
+    Tests the complete FDO onboarding workflow using go-fdo-client
+    with Fedora RPMs built by packit
+test: ./test-onboarding.sh
+duration: 30m
+require:
+    - go-fdo-client
+    - go-fdo-server

@@ -1,0 +1,12 @@
+summary: Go FDO Client E2E Tests
+discover:
+    how: fmf
+execute:
+    how: tmt
+prepare:
+    - how: shell
+      script: dnf install -y go-fdo-server sqlite
+provision:
+    how: virtual
+    memory: 4096
+    disk: 30
