@@ -3,7 +3,7 @@ files_to_sync:
       - ".packit.yaml"
       - "build/package/rpm/go-fdo-client.spec"
       - "build/package/rpm/go-vendor-tools.toml"
-      - "build/package/rpm/go-fdo-client-*-vendor.tar.gz"
+      - "build/package/rpm/go-fdo-client-*-vendor.tar.bz2"
     dest: .
 
 upstream_package_name: go-fdo-client
@@ -17,7 +17,6 @@ srpm_build_deps:
   - git
   - golang
   - go-vendor-tools
-  - gzip
   - tar
   - python3-tomlkit
 
