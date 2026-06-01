@@ -43,7 +43,7 @@ FDO manufacturer and owner servers to perform device on-boarding.
 # https://github.com/golang/go/issues/75079
 export GOEXPERIMENT="nodwarf5"
 
-export GO_LDFLAGS="-X %{goipath}/internal/version.VERSION=%{version}"
+export GO_LDFLAGS='-X %{goipath}/internal/version.VERSION=%{version} %{?currentldflags}'
 %gobuild -o %{gobuilddir}/bin/go-fdo-client %{goipath}
 
 %install
